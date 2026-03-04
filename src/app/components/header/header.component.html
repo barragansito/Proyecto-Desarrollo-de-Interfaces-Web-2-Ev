@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="site-header__container">
+    <a routerLink="/" class="site-header__brand">
+      <span>Alpargatas</span>
+      <img src="/images/iconos/logo.png" alt="Logo de Alpargatas" class="site-header-logo">
+    </a>
+    <nav class="site-header__nav" aria-label="Navegacion principal">
+      <a routerLink="/" routerLinkActive="site-header__link--active" [routerLinkActiveOptions]="{ exact: true }" class="site-header__link">Inicio</a>
+      <a routerLink="/productos" routerLinkActive="site-header__link--active" class="site-header__link">Productos</a>
+      <a routerLink="/carrito" routerLinkActive="site-header__link--active" class="site-header__link">Carrito</a>
+      <a routerLink="/contacto" routerLinkActive="site-header__link--active" class="site-header__link">Contacto</a>
+    </nav>
+    <label class="site-header__theme-label" for="theme-toggle">
+      <span class="site-header__theme-text site-header__theme-text--dark">Modo oscuro</span>
+      <span class="site-header__theme-text site-header__theme-text--light">Modo claro</span>
+    </label>
+  </div>
+</header>

@@ -1,0 +1,31 @@
+.app {
+  --color-bg: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-text: #111111;
+  --color-muted: #6a6a6a;
+  --color-border: #d8d8d8;
+  --color-accent: #111111;
+  --color-accent-text: #ffffff;
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --content-max: 1180px;
+  --panel-gradient: linear-gradient(160deg, #ffffff 0%, #fafafa 65%, #f5f5f5 100%);
+}
+
+.app__theme-toggle:checked ~ .app {
+  --color-bg: #000000;
+  --color-surface: #0f1114;
+  --color-text: #ffffff;
+  --color-muted: #c1c7d0;
+  --color-border: #2a2e35;
+  --color-accent: #ffffff;
+  --color-accent-text: #050505;
+  --shadow-soft: 0 12px 28px rgba(0, 0, 0, 0.45);
+  --panel-gradient: linear-gradient(160deg, #15181d 0%, #0e1013 65%, #0a0c0f 100%);
+}

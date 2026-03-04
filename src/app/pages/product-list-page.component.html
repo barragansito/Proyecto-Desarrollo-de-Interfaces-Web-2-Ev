@@ -1,0 +1,24 @@
+<section class="catalog" aria-labelledby="catalog-title">
+  <header class="catalog__header">
+    <h1 id="catalog-title" class="catalog__title">Zapatillas para atletismo</h1>
+    <p class="catalog__subtitle">Coleccion destacada de Alpargatas</p>
+  </header>
+
+  <div class="catalog__layout">
+    <aside class="catalog-filters" aria-label="Filtros">
+      <h2 class="catalog-filters__title">Filtros</h2>
+      <ul class="catalog-filters__list">
+        <li class="catalog-filters__item">Running</li>
+        <li class="catalog-filters__item">Entrenamiento</li>
+        <li class="catalog-filters__item">Competicion</li>
+        <li class="catalog-filters__item">Lifestyle</li>
+      </ul>
+    </aside>
+
+    <div class="catalog-grid">
+      @for (product of products; track product.id) {
+        <app-product-card [product]="product"></app-product-card>
+      }
+    </div>
+  </div>
+</section>
